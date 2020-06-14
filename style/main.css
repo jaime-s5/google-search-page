@@ -2,17 +2,28 @@
  * ---------------------------- HEADER  ----------------------------
  * -----------------------------------------------------------------
  */
- 
+ .top_navbar {
+     margin-top: 22px;
+ }
 /* ---------------------------- TOP ---------------------------- */
-.top_navbar .navbar1 {
-     /* If a div has only floats, it collapses. To avoid this one can
-      * "clear" the float with overflow or clear properties.
-      *
-      * Overflow sets what to do with content that overflows a 
-      * container (hide it, clipt it, etc). If it is used with a
-      * a container with only floats, it fits to them.
-      */
-    overflow: hidden;
+.top_navbar .navbar1::after {
+    /* If a div has only floats, it collapses. To avoid this one can
+    * "clear" the float with overflow or clear properties.
+    *
+    * Overflow sets what to do with content that overflows a 
+    * container (hide it, clipt it, etc). If it is used with a
+    * a container with only floats, it fits to them. But, content
+    * (like shadows) that goes outside is hidden.
+
+    * Another option is to use clear: both after the last child
+    * inside the container.
+    *
+    * The best option (for screen readers also) is to use the after
+    * pseudo-element div.
+    */
+    content: "";
+    display: block; 
+    clear: both;
 }
 
 /* -------------- Left -------------- */
@@ -21,6 +32,7 @@
      * absolute elements.
      */
     float: left;
+    margin-left: 5px;
 }
 
 .navbar1 .left div {
@@ -34,14 +46,15 @@
 }
 
 #search_bar {
-    width: 480px;
+    width: 650px;
     height: 40px;
     background-color: transparent;
-    border-radius: 20px;
+    font-family: arial, sans-serif;
+    border-radius: 50px;
     border: 1px solid #d4d4d4;
-    margin-left: 100px;
-    padding-left: 41px;
-    padding-bottom: 3px;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-bottom: 2px;
     font-size: 16px;   
 }
 
@@ -55,6 +68,8 @@
 /* -------------- Right -------------- */
 .top_navbar .navbar1 .right {
     float: right;
+    margin-right: 35px;
+    margin-top: 5px;
 }
 
 .navbar1 .right div {
@@ -62,11 +77,19 @@
     vertical-align: middle;
 }
 
-#app_icon {
-    display: block;
-    width: 25px;
-    margin: 0 0 0 5px;
-    opacity: 75%;
+#icon_apps {
+    display: grid;
+    grid-template-columns: 4px 4px 4px;
+    grid-template-rows: 4px 4px 4px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    opacity: 50%;
+    margin-right: 15px;
+}
+
+.grid-item {
+    background-color: black;
+    border-radius: 20px;
 }
 
 .btn1 { 
@@ -74,15 +97,56 @@
     white-space: nowrap;
 
     /* size comes from text & padding (no width/height) */
-    padding: 0.3em 1em;
-
-    border: 1px solid #005eff;
-    font-weight: bold;
+    padding: 0.65em 1.5em;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #2977dd;
+    border-radius: 5px;
     color: #ffffff;
-    background-color: #005eff;
+    background-color: #2977dd;
 }
 
 /* ---------------------------- BOTTOM ---------------------------- */
 .top_navbar .navbar2 {
-   overflow: hidden;
+    overflow: hidden;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dddddd;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.navbar2 a {
+    color: black;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    opacity: 65%;
+}
+
+.top_navbar .navbar2::after {
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+/* -------------- Left -------------- */
+.navbar2 .sites {
+    float: left;
+    margin-left: 180px;
+}
+.navbar2 .sites div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* -------------- Right -------------- */
+.navbar2 .options {
+    float: left;
+    margin-left: 150px;
+}
+
+.navbar2 .options div {
+    display: inline-block;
+    vertical-align: middle;
 }
