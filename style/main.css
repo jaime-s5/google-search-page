@@ -46,7 +46,7 @@
 }
 
 #search_bar {
-    width: 650px;
+    width: 665px;
     height: 40px;
     background-color: transparent;
     font-family: arial, sans-serif;
@@ -65,6 +65,12 @@
                 -2px 0 2px rgba(214, 214, 214, 0.274);
 }
 
+.icons {
+    /* Relative path, from the CSS file, note the HTML */
+    background: 91.5% / 3.5% no-repeat url('../assets/google_clear.svg'),
+    97% / 3.5% no-repeat url('../assets/google_magnifier_blue.svg');
+}
+
 /* -------------- Right -------------- */
 .top_navbar .navbar1 .right {
     float: right;
@@ -77,6 +83,16 @@
     vertical-align: middle;
 }
 
+#container {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#container:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+}
 #icon_apps {
     display: grid;
     grid-template-columns: 4px 4px 4px;
@@ -84,7 +100,6 @@
     grid-column-gap: 2px;
     grid-row-gap: 2px;
     opacity: 50%;
-    margin-right: 15px;
 }
 
 .grid-item {
@@ -104,24 +119,29 @@
     border-radius: 5px;
     color: #ffffff;
     background-color: #2977dd;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),
+                0 1px 3px 1px rgba(66,133,244,0.15);
+    background-color: #2b7de9;
 }
 
 /* ---------------------------- BOTTOM ---------------------------- */
 .top_navbar .navbar2 {
     overflow: hidden;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: #dddddd;
-
+    border-bottom: 1px solid #dddddd;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-.navbar2 a {
+.item a {
     color: black;
     font-family: arial, sans-serif;
-    text-decoration: none;
+    font-size: 12px;
     opacity: 65%;
+    text-decoration: none;
 }
 
 .top_navbar .navbar2::after {
@@ -130,23 +150,41 @@
     clear: both;
 }
 
-/* -------------- Left -------------- */
-.navbar2 .sites {
-    float: left;
-    margin-left: 180px;
-}
-.navbar2 .sites div {
+.item {
+    padding: 0 11px 10px 11px;
+
     display: inline-block;
     vertical-align: middle;
+}
+
+/* -------------- Left -------------- */
+.sites {
+    float: left;
+    margin-left: 170px;
+}
+
+.icon {
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.selected {
+    border-bottom: 3px solid #1A73E8;
+    padding: 0 11px 10px 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.selected a {
+    color: #1A73E8;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 /* -------------- Right -------------- */
-.navbar2 .options {
+.options {
     float: left;
-    margin-left: 150px;
-}
-
-.navbar2 .options div {
-    display: inline-block;
-    vertical-align: middle;
+    margin-left: 100px;
 }
