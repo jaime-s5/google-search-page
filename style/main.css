@@ -130,10 +130,8 @@
 
 /* ---------------------------- BOTTOM ---------------------------- */
 .top_navbar .navbar2 {
-    overflow: hidden;
     border-bottom: 1px solid #dddddd;
     margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 .item a {
