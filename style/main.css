@@ -186,3 +186,59 @@
     float: left;
     margin-left: 100px;
 }
+
+/* -----------------------------------------------------------------
+* ---------------------------- RESULTS  ----------------------------
+* -----------------------------------------------------------------
+*/
+
+.search_results {
+    float: left;
+    margin-left: 181px;
+    width: 600px;
+    font-family: arial, sans-serif;
+}
+
+.search_results p {
+    font-size: 14px;
+}
+
+#info_results {
+    margin: 15px 0;
+    opacity: 50%;
+}
+/* -------------- Text results -------------- */
+
+.link {
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}
+
+.domain_name {
+    display: inline-block;
+}
+
+.subdirectory {
+    display: inline-block;
+    opacity: 50%;
+}
+
+.cache {
+    display: inline-block;
+    opacity: 50%;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.bold2 {
+    font-weight: bold;
+}
+.content {
+    line-height: 20px;
+    opacity: 50%;
+}
+/* -------------- Video results -------------- */
