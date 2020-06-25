@@ -195,7 +195,7 @@
 .search_results {
     float: left;
     margin-left: 181px;
-    width: 600px;
+    width: 652px;
     font-family: arial, sans-serif;
 }
 
@@ -204,10 +204,35 @@
 }
 
 #info_results {
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 24px;
     opacity: 50%;
 }
+
+.title {
+    font-size: 20px;
+    color: #1a0dab;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.webpage {
+    opacity: 70%;
+    display: inline-block;
+}
+
+.bold2 {
+    font-weight: bold;
+}
+
 /* -------------- Text results -------------- */
+
+.text {
+    margin-bottom: 30px;
+    width: 600px;
+}
 
 .link {
     text-decoration: none;
@@ -215,30 +240,81 @@
     font-size: 14px;
 }
 
-.domain_name {
-    display: inline-block;
+.text .title {
+    margin: 8px 0;
 }
 
-.subdirectory {
-    display: inline-block;
-    opacity: 50%;
-}
-
-.cache {
-    display: inline-block;
-    opacity: 50%;
-}
-
-.title {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.bold2 {
-    font-weight: bold;
-}
 .content {
-    line-height: 20px;
-    opacity: 50%;
+    line-height: 22px;
+    opacity: 70%;
+    font-size: 14px;
+}
+
+.bar_links li{
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.bar_links li a {
+    color: #1a0dab;
+    font-size: 14px;
+    text-decoration: none;
+}
+.bar_links li a:hover {
+    text-decoration: underline;
+}
+
+/* -------------- Card results -------------- */
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    padding: 15px;
+}
+
+.content2 {
+    line-height: 22px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card .webpage {
+    margin-bottom: 10px;
+}
+
+.card .title {
+    margin-bottom: 5px;
+}
+
+.card_bar {
+    padding: 5px 0;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+.card_links {
+    float: right;
+}
+
+.card_links li {
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 45%;
+    font-size: 14px;
+}
+
+.card_links li a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card_links li a:hover {
+    text-decoration: underline;
+}
+
+.card_bar:after{
+    content: "";
+    display: block; 
+    clear: both;
 }
 /* -------------- Video results -------------- */
