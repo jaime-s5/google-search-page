@@ -267,7 +267,7 @@
 /* -------------- Card results -------------- */
 
 .card {
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid #d4d4d4;
     padding: 15px;
 }
@@ -291,6 +291,7 @@
     margin-right: 20px;
     margin-bottom: 35px;
 }
+
 .card_links {
     float: right;
 }
@@ -308,7 +309,17 @@
     text-decoration: none;
 }
 
-.card_links li a:hover {
+.icon2 {
+    width: 16px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.card_links li div {
+    display: inline-block;
+}
+
+.card_links li div:hover {
     text-decoration: underline;
 }
 
@@ -317,4 +328,86 @@
     display: block; 
     clear: both;
 }
+/* -------------- Card questions -------------- */
+.card_ask {
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+}
+
+.card_element {
+    border-top: 1px solid #dddddd;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.title_ask {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.icon3 {
+    width: 24px;
+    float:right;
+    opacity: 55%;
+}
+
 /* -------------- Video results -------------- */
+
+.video {
+    font-family: arial, sans-serif;
+}
+
+.heading {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card_video {
+    border-radius: 8px;
+    border: 1px solid #d4d4d4;
+    float: left;
+    width: 208px;
+}
+
+.video::after {
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+.video_link {
+    cursor: pointer;
+}
+.video_link:hover {
+    text-decoration: underline;
+}
+
+.title3 {
+    font-size: 16px;
+    color: #1a0dab;
+    padding: 13px 45px 0 15px;
+    height: 100px;
+    line-height: 22px;
+}
+
+.video_info {
+    padding: 15px 0 15px 13px;
+}
+
+.video_channel {
+    font-size: 14px;
+    opacity: 50%;
+    margin-bottom: 8px;
+}
+
+.video_website {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.video_date {
+    font-size: 14px;
+    opacity: 50%;
+    display: inline-block;
+}
