@@ -355,6 +355,7 @@
 
 .video {
     font-family: arial, sans-serif;
+    margin-bottom: 40px;
 }
 
 .heading {
@@ -364,8 +365,9 @@
 }
 
 .card_video {
-    border-radius: 8px;
+    border-radius: 9px;
     border: 1px solid #d4d4d4;
+    margin-right: 8px;
     float: left;
     width: 208px;
 }
@@ -410,4 +412,40 @@
     font-size: 14px;
     opacity: 50%;
     display: inline-block;
+}
+
+/* -------------- Navigation links -------------- */
+.nav_links {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+
+.search_link {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.icon4 {
+    width: 20px;
+    display: inline-block;
+    fill: #1a0dab;
+    vertical-align: middle;
+}
+
+.searches {
+    display: inline-block;
+    font-weight: bold;
+    margin: 7px;
+}
+
+.nav_links::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* -------------- Goooogle links -------------- */
+.goooogle {
+    display: flex;
 }
