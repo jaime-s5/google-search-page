@@ -448,4 +448,55 @@
 /* -------------- Goooogle links -------------- */
 .goooogle {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page {
+    display: inline-block;
+    text-decoration: none;
+    color: #4285f4;
+}
+
+.page:hover{
+    text-decoration: underline;
+}
+
+.letter-gb {
+    background: no-repeat url('../assets/nav_logo299.webp');
+    background-position: -24.5px 0;
+    width: 28px;
+    height: 40px;
+}
+
+.letter-or {
+    background: no-repeat url('../assets/nav_logo299.webp');
+    background-position: -53px 0;
+    width: 20px;
+    height: 40px;
+}
+
+.letter-oy {
+    background: no-repeat url('../assets/nav_logo299.webp');
+    background-position: -74px 0;
+    width: 20px;
+    height: 40px;
+}
+
+.letter-gle {
+    background: no-repeat url('../assets/nav_logo299.webp');
+    background-position: -95px 0;
+    width: 71px;
+    height: 40px;
+}
+
+.page_numb {
+    display: flex;
+    justify-content: center;
+}
+
+.page_next {
+    display: flex;
+    justify-content: end;
+    width: 120px;
 }
