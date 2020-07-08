@@ -192,6 +192,12 @@
 * -----------------------------------------------------------------
 */
 
+.search_container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .search_results {
     float: left;
     margin-left: 181px;
@@ -323,7 +329,7 @@
     text-decoration: underline;
 }
 
-.card_bar:after{
+.card_bar::after{
     content: "";
     display: block; 
     clear: both;
