@@ -4,6 +4,7 @@
  */
  .top_navbar {
      margin-top: 22px;
+     min-width: 1200px;
  }
 /* ---------------------------- TOP ---------------------------- */
 .top_navbar .navbar1::after {
@@ -470,7 +471,7 @@
 
 .letter-gb {
     background: no-repeat url('../assets/nav_logo299.webp');
-    background-position: -24.5px 0;
+    background-position: -24px 0;
     width: 28px;
     height: 40px;
 }
@@ -505,4 +506,67 @@
     display: flex;
     justify-content: end;
     width: 120px;
+}
+
+
+/* ----------------------------------------------------------------
+* ---------------------------- FOOTER  ----------------------------
+* -----------------------------------------------------------------
+*/
+
+.bottom {
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    min-width: 1000px;
+    font-family: arial, sans-serif;
+    opacity: 75%;
+    color: #333;
+}
+
+.bot_navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    padding-left: 181px;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+}
+
+.bot_navbar div {
+    font-size: 14px;
+}
+
+.elem {
+    padding: 5px 0 5px 15px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-left: 1px solid #e2e2e2;
+}
+
+
+.elem div {
+    margin-right: 3px;
+}
+
+.nav2 div{
+    margin-right: 2em;
+}
+
+.bot_navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.bot_navbar a:hover {
+    color: black;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50px;
 }
