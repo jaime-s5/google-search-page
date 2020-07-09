@@ -446,6 +446,11 @@
     margin: 7px;
 }
 
+
+.searches:hover {
+    text-decoration: underline;
+}
+
 .nav_links::after {
     content: "";
     display: block;
